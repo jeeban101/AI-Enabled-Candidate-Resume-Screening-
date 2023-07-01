@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #F0E8E8;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .navbar-brand {
+            padding: 0;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .flowchart {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .flowchart h2 {
+            margin-bottom: 30px;
+        }
+
+        .project-box {
+            background-color: #F0E8E8;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .project-box h3 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .project-box p {
+            font-size: 16px;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .team-member h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .team-member p {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        .contact {
+            background-color: #333;
+            color: #FFFFFF;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin: 0;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='images/logo.png')}}" alt="Company Logo">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/aboutUs">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="flowchart">
+            <h2>Flowchart for AI Enabled Resume Screening using Spacy</h2>
+            <img src="{{ url_for('static', filename='images/flowchart.png')}}" alt="Flowchart" width="700" height="1500">
+        </div>
+
+        <div class="team-member">
+            <h2>Team</h2>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Ashutosh Raj Shrestha</h3>
+                    <p>VIT Vellore</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3>Danvarsha Meka</h3>
+                    <p>VIT AP</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3>Jeeban Bhagat</h3>
+                    <p>VIT Vellore</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3>Padala Satyanarayana Reddy</h3>
+                    <p>VIT Chennai</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="project-box">
+            <h3>Smart Internz: Revolutionizing AI Learning</h3>
+            <p>
+                Smart Internz is a leading platform that provides comprehensive AI learning resources and real-world project opportunities to aspiring AI enthusiasts and professionals. Our aim is to bridge the gap between academia and industry by offering hands-on experience and exposure to popular AI projects.
+            </p>
+        </div>
+
+        <div class="project-box">
+            <h3>Popular Common & Popular AI Projects at SmartInternz</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sentiment Analysis</h5>
+                            <p class="card-text">Perform sentiment analysis on text data to determine the sentiment or emotion expressed.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Image Classification</h5>
+                            <p class="card-text">Train a model to classify images into different categories or classes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Chatbot Development</h5>
+                            <p class="card-text">Build intelligent chatbots that can interact with users and provide automated responses.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Recommendation Systems</h5>
+                            <p class="card-text">Develop recommendation systems that suggest personalized recommendations based on user preferences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Speech Recognition</h5>
+                            <p class="card-text">Create speech recognition systems that can transcribe spoken language into written text.</p>
+                        </div>
+                    </div>
+                </div>
+		<div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monitoring System</h5>
+                            <p class="card-text">Create monitoring systems that can montor system based on model configured.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@smartinternz.com</p>
+            <p>Phone: +1 123-456-7890</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

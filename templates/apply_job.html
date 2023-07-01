@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply Job</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #F5F5F5;
+        }
+
+        .navbar {
+            background-color: #F0E8E8;
+            font-size: 18px;
+        }
+
+        .navbar-brand {
+            padding: 0;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .job-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .job-item {
+            width: 30%;
+            padding: 20px;
+            background-color: #F0E8E8;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .job-item h3 {
+            margin-top: 0;
+        }
+
+        .job-item img {
+            width: 250px;
+            height: 150px;
+	    object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background-color: #333;
+            color: #FFFFFF;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin: 0;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='images/logo.png')}}" alt="Company Logo">
+                <img src="{{ url_for('static', filename='images/smartbridgeLogo_transparent.png')}}" alt="Company Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/apply_job">Apply Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutUs">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Apply for a Job</h1>
+        <p>Please select the job you want to apply for:</p>
+        <ul class="job-list">
+            <li class="job-item">
+                <img src="{{ url_for('static', filename='images/job1.png')}}" alt="Job 1 Image">
+                <h3>AI Developer</h3>
+                <p>As an AI Developer, you will design and implement AI algorithms and models to solve complex problems and drive innovation in artificial intelligence.</p>
+                <a class="btn btn-primary" href="/fill_form">Apply</a>
+            </li>
+            <li class="job-item">
+                <img src="{{ url_for('static', filename='images/job2.png')}}" alt="Job 2 Image">
+                <h3>Java Developer</h3>
+                <p> As a Java Developer, you will be responsible for developing and maintaining Java-based applications, leveraging your expertise in Java programming and software development principles.</p>
+                <a class="btn btn-primary" href="/fill_form">Apply</a>
+            </li>
+            <li class="job-item">
+                <img src="{{ url_for('static', filename='images/job3.png')}}" alt="Job 3 Image">
+                <h3>Data Scientist </h3>
+                <p>As a Data Scientist, you will analyze large datasets, build predictive models, and uncover insights to drive data-driven decision-making, utilizing your expertise in statistical analysis and machine learning techniques.</p>
+                <a class="btn btn-primary" href="/fill_form">Apply</a>
+            </li
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@smartbridge.com</p>
+        <p>Phone: +1 123-456-7890</p>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 SmartBridge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

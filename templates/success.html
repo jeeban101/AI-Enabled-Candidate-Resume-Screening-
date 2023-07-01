@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            background-color: #F0E8E8;
+        }
+
+        .navbar-brand {
+            padding: 0;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        .nav-link {
+            color: #9F0A90;
+	    font-size: 18px;
+        }
+
+        .nav-link:hover {
+            color: #0066CC;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .jumbotron {
+            background-color: #F0E8E8;
+        }
+
+        .contact {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .details {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .details h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .details p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='images/logo.png')}}" alt="Company Logo">
+                <img src="{{ url_for('static', filename='images/smartbridgeLogo_transparent.png')}}" alt="Company Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/apply_job">Apply Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutUs">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 style="font-size: 2.5rem; font-weight: lighter;">Your Resume Submitted Successfully</h1>
+            <p class="lead">Thank you for submitting your resume. We have received your application and will review it shortly and you will receive an Email.</p>
+        </div>
+
+        <!-- Display submitted information -->
+        <div class="details">
+            <h2>Submitted Information:</h2>
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Skills(as per uploaded Resume):</strong></p>
+            <ul>
+                {% for skill in skills %}
+                    <li>{{ skill }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@smartbridge.com</p>
+            <p>Phone: +1 123-456-7890</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 SmartBridge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

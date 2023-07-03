@@ -1,4 +1,4 @@
-# AI-Enabled Candidate Resume Screening
+# AI Enabled Candidate Resume Screening Using Spacy Entity Recognition
 
 This repository contains the code for an AI-enabled candidate resume screening system. It allows you to automatically screen resumes based on job requirements and skills.
 

@@ -25,6 +25,11 @@ Before running the project, ensure you have the following dependencies installed
 - `templates/`: HTML templates for the web application.
 - `static/`: Static files (CSS, images, etc.) for the web application.
 - `Assignments-AI-20BIT0441/`: Folder containing assignment notebooks and datasets.
+- `AI Enabled Candidate Resume Screening/`: Folder contains all the modules and files for AI Enabled Candidate Resume Screening Using Spacy Entity Recognition.
+- `Project Report AI Resume Screening.pdf`: Detailed Report for the AI Enabled Candidate Resume Screening Using Spacy Entity Recognition.
+- `Assignment Datasets Link.txt`: Contains Link for datasets of the assignment.
+- `Demo Video Link & Assignment Datasets Link.txt`: Contains demo video link of project explaining workflow and working of code with demo.
+- `requirements.txt`: Contains the python libraries and dependencies required for project. 
 
 ## Additional Resources
 
@@ -34,13 +39,11 @@ Before running the project, ensure you have the following dependencies installed
 
 ## Contributors
 - Jeeban Bhagat (https://github.com/jeeban101/AI-Enabled-Candidate-Resume-Screening-) (20BIT0441, VIT,Vellore)
+- Ashutosh Raj Shrestha (https://github.com/xargs0/AI-Enabled-Candidate-Resume-Screening-) (20BIT0444,VIT,Vellore)
 - Danvarsha Meka(https://github.com/varshh10/AI-enabled-Resume-Screening.git) (20BCR7102,VIT-AP)
 - P.Satyanarayana Reddy (https://github.com/Satyaa01/AWS-Project) (20BRS1263, VIT,Chennai)
-- Ashutosh Raj Shrestha (https://github.com/xargs0/AI-Enabled-Candidate-Resume-Screening-) (20BIT0444,VIT,Vellore)
-
-
+- 
 ## Requirements
-
 - Python 3.x
 - Flask
 - Pyresparser

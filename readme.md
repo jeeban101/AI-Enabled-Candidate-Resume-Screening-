@@ -29,7 +29,7 @@ Before running the project, ensure you have the following dependencies installed
 ## Additional Resources
 
 - [Demo Video](https://drive.google.com/file/d/1R8K-JbSm0XpSLmjK_8FCeyr-EzEs84uQ/view?usp=sharing): Watch a demonstration of the project in action.
-- [Project Report](will be here or link:-): Read the report documenting the assignments.
+- [Project Report](https://github.com/jeeban101/AI-Enabled-Candidate-Resume-Screening-/blob/main/Project%20Report%20AI%20Resume%20Screening.pdf): Read the report documenting the assignments.
 - [Drive Folder](https://drive.google.com/drive/folders/1Sxp0-cwl0nEDT5cbkbB3b8RUhwZSfi9h?usp=sharing): Access the assignments and datasets on Google Drive.
 
 ## Contributors

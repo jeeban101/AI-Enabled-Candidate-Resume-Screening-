@@ -42,7 +42,6 @@ Before running the project, ensure you have the following dependencies installed
 - Ashutosh Raj Shrestha (https://github.com/xargs0/AI-Enabled-Candidate-Resume-Screening-) (20BIT0444,VIT,Vellore)
 - Danvarsha Meka(https://github.com/varshh10/AI-enabled-Resume-Screening.git) (20BCR7102,VIT-AP)
 - P.Satyanarayana Reddy (https://github.com/Satyaa01/AWS-Project) (20BRS1263, VIT,Chennai)
-- 
 ## Requirements
 - Python 3.x
 - Flask

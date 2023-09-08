@@ -78,6 +78,7 @@ if Error:
 -pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 -pip install pyresparser
 does the trick. Also try different spacy versions and models, because they produce different results. Haven't tested any further myself. Hope this helps :)
+TO RESOLVE THE nltk error "python3 -m nltk.downloader stopwords" after pip install nltk
 
 Assignments(https://drive.google.com/drive/folders/1Sxp0-cwl0nEDT5cbkbB3b8RUhwZSfi9h?usp=sharing)
 The "Assignments-AI-20BIT0441" folder contains assignments in Jupyter Notebook format. Each assignment is a separate .ipynb file that demonstrates different concepts and techniques related to AI.

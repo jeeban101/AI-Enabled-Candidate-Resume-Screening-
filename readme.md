@@ -71,10 +71,11 @@ The application will be accessible at http://127.0.0.1:5000/.(may differ by flas
 if Error:
 	OSError: [E053] Could not read config.cfg from .....\venv\lib\site-packages\pyresparser\config.cfg #46
 		then,do the following:
--pip install nltk
--pip install spacy==2.3.5
--pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
--pip install pyresparser
+- `pip install nltk`  
+- `pip install spacy==2.3.5`  
+- `pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz`  
+- `pip install pyresparser`
+ 
 does the trick. Also try different spacy versions and models, because they produce different results. Haven't tested any further myself. Hope this helps :)
 TO RESOLVE THE nltk error "python3 -m nltk.downloader stopwords" after pip install nltk
 

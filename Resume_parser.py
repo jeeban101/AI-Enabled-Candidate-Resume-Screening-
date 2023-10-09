@@ -2,9 +2,11 @@ from pyresparser import ResumeParser
 import smtplib
 
 # SMTP initialization for Outlook
-s = smtplib.SMTP('smtp.office365.com', 587)
-s.starttls()
-s.login("autoResumeResponse@outlook.com", "Masu6bhat@")
+def smptConn():
+    s = smtplib.SMTP('smtp.office365.com', 587)
+    s.starttls()
+    s.login("autoResumeResponse@outlook.com", "Masu6bhat@")
+    return s
 
 SUBJECT = "Interview Call"
 python_skills = ["ml", "ai", "matplotlib", "seaborn",
@@ -71,7 +73,7 @@ def compare_skills(appliedJob, skills):
     return skills_matched
 
 
-def send_email(email, name, is_rejected, appliedJob):
+def send_email(email, name, is_rejected, appliedJob,s):
     if is_rejected:
         TEXT = f"Hello {name}, \n\nThanks for applying to the job post {appliedJob} . Your candidature is " \
                f"rejected.\n\n\n\nThanks and Regards,\n\nTalent Acquisition Team,\n\nSmartInternz by Smartbridge"

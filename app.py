@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
-from Resume_parser import extract_skills, compare_skills, send_email, extract_education, extract_certificates
+from Resume_parser import extract_skills, compare_skills, send_email,smptConn, extract_education, extract_certificates
 
 app = Flask(__name__)
 
@@ -46,12 +46,14 @@ def upload_file():
         if len(skills_matched) >= 4:
             print("he is eligible")
             is_rejected = False
-            send_email(email, name, is_rejected, appliedJob)
+            s = smptConn()
+            send_email(email, name, is_rejected, appliedJob,s)
             return render_template('success.html', name=nameGiven, email=emailGiven, skills=skills_matched)
         else:
             is_rejected = True
             print("Sorry, we can't process your candidature")
-            send_email(email, name, is_rejected, appliedJob)
+            s = smptConn()
+            send_email(email, name, is_rejected, appliedJob,s)
             return render_template('success.html', name=nameGiven, email=emailGiven, skills=skills_matched)
     else:
         return render_template('home.html')

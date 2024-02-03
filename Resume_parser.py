@@ -5,7 +5,7 @@ import smtplib
 def smptConn():
     s = smtplib.SMTP('smtp.office365.com', 587)
     s.starttls()
-    s.login("autoResumeResponse@outlook.com", "Masu6bhat@") #Masu4bhat
+    s.login("autoResumeResponse@outlook.com", "Masu6bhat@") #Masu4bhat@
     return s
 
 SUBJECT = "Interview Call"

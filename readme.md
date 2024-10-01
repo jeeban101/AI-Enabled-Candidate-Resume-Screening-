@@ -1,7 +1,7 @@
 # AI Enabled Candidate Resume Screening Using Spacy Entity Recognition
 ## Link to access: the website: https://ai-resume-parsing.onrender.com/
 This repository contains the code for an AI-enabled candidate resume screening system (web based using python-flask). It allows you to automatically screen resumes based on job requirements and skills.
-### Refer this Repo directly downloading and running the code in your python IDE(make sure to take help from GPTs to setup and run the code): https://github.com/jeeban101/AI-Resume-Screening 
+### Refer this Repo directly downloading and running the code in your python IDE(make sure to take help from GPTs to setup and run the code, also refer this readme for understanding of code): https://github.com/jeeban101/AI-Resume-Screening 
 ## Prerequisites
 
 Before running the project, ensure you have the following dependencies installed:
